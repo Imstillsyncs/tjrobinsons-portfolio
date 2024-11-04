@@ -34,3 +34,19 @@ code {
   justify-content: center;
   align-items: center;
 }
+.certificate-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 1rem;
+}
+
+.certificate {
+  padding: 1rem;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff;
+  border: 1px solid #00aaff; /* Blue border */
+  text-align: center;
+  border-radius: 8px;
+}
+
