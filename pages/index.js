@@ -1,23 +1,38 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <Navbar />
+      <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is the home section of your portfolio.</p>
+      </section>
+      
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Details about you and your background.</p>
+      </section>
+      
+      <section id="projects">
+        <h2>My Projects</h2>
+        <p>List your projects here.</p>
+      </section>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <div className="certificate-gallery">
+          {/* Replace with your actual certificates */}
+          <div className="certificate">Certificate 1</div>
+          <div className="certificate">Certificate 2</div>
+          <div className="certificate">Certificate 3</div>
+        </div>
+      </section>
 
-      <Footer />
-    </div>
-  )
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Contact information or form.</p>
+      </section>
+    </>
+  );
 }
